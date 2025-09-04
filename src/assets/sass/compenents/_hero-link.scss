@@ -1,0 +1,22 @@
+@use "../base/" as base;
+
+.hero-container a {
+  display: block;
+  min-width: 250px;
+  background-color: base.$white;
+  padding: 15px 20px;
+  text-decoration: none;
+  border-radius: 25px;
+  color: base.$black;
+  font-weight: 600;
+  font-size: clamp(base.$fs-18, 2.0vw, base.$fs-20);
+}
+
+a.contact-link {
+    color: base.$white;
+    background-color: base.$purple;
+}
+
+.hero-container a:hover {
+    opacity: 0.7;
+}

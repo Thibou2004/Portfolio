@@ -1,0 +1,26 @@
+@use "../base/" as base;
+
+.skill-info {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    min-width: 200px;
+}
+
+.skill-info header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+.skill-info i {
+    font-size: 38px;
+}
+
+.skill-info h3, .skill-info .bold {
+    // color: base.$blue;
+    background: linear-gradient(90deg, base.$blue, #00eaff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}

@@ -1,0 +1,175 @@
+@use "../base/" as base;
+@use "../layouts" as layout;
+@use "../compenents/" as compenent;
+
+/*  Général  */
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    // background: #4b6cb7;  /* fallback for old browsers */
+    // background: -webkit-linear-gradient(135deg, #182848, #4b6cb7);  /* Chrome 10-25, Safari 5.1-6 */
+    // background: linear-gradient(to right, #182848, #4b6cb7); 
+
+    color: base.$white;
+    font-family: base.$roboto;
+    font-size: clamp(base.$fs-14, 1.6vw, base.$fs-16);
+}
+
+h1, h2, h3, a, button {
+    font-family: base.$montserrat;
+}
+
+button {
+    cursor: pointer;
+}
+
+h1 {
+    font-size: clamp(base.$fs-32, 3.8vw, base.$fs-38);
+}
+
+h2 {
+    font-size: clamp(base.$fs-24, 2.8vw, base.$fs-28);
+    text-align: center;
+}
+
+section {
+    padding: 50px 20px 30px;
+}
+
+.bold {
+    font-weight: 600;
+}
+
+/*     hero-section       */
+
+.hero-section {
+    // background: linear-gradient(135deg, #1a1a2e, #16213e, #0f3460); 
+    // background: linear-gradient(135deg, 
+    // #182848 0%,
+    // #182848 60%,
+    //  #4b6cb7 90%,
+    //  #4b6cb7 100%
+     
+    //  ); 
+    background: linear-gradient(135deg, #182848,#253a64, #4b6cb7);
+
+    height: 700px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 25px;
+    padding: 0 25px;
+}
+
+h1 {
+  max-width: 690px;
+  width: 100%;
+}
+
+h1 span {
+  display: block;
+}
+
+.hero-container {
+  max-width: 690px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+
+.description {
+  max-width: 690px;
+  width: 100%;  
+}
+
+.hero-section > p {
+  max-width: 690px;
+  width: 100%;   
+}
+
+/*  section skills  */
+
+#skills {
+    background: linear-gradient(45deg, #182848,#253a64, #4b6cb7);
+}
+
+.container-skills {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+/*  section Projets   */
+
+#projects {
+    background: linear-gradient(-135deg, #182848,#253a64, #4b6cb7);
+}
+
+#projects ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.container-projects {
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    flex-wrap: wrap;
+}
+
+/*  section Contact   */
+
+#contact {
+    background: linear-gradient(-45deg, #182848,#253a64, #4b6cb7);
+}
+
+#contact h2 {
+    color:  #d0e6ff;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin: 20px auto 0;
+    max-width: 400px;
+    width: 100%;
+}
+
+label, input {
+    display: block;
+    width: 100%;
+}
+
+label {
+    font-size: clamp(base.$fs-18, 2.0vw, base.$fs-20);
+    margin-bottom: 5px;
+    // color: #9762f9;
+    color: #d0e6ff;
+}
+
+textarea {
+    display: block;
+    resize: vertical;
+    border-radius: 5px;
+}
+
+input {
+   padding: 5px 10px;
+   border-radius: 10px;
+   border: none;
+}
+
+input:focus:not(input[type="submit"]), textarea:focus {
+    // outline: 3px solid base.$blue;
+    outline: 3px solid base.$purple;
+}

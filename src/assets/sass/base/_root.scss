@@ -1,0 +1,29 @@
+@use "sass:math";
+
+// font-family
+$montserrat: "Montserrat", "sans-serif";
+$roboto: "Roboto", "sans-serif";
+
+
+
+
+@function px-to-rem($value) {
+    @return math.div($value, 16) + rem;
+}
+// font-size
+$fs-14: px-to-rem(14);
+$fs-16: px-to-rem(16);
+$fs-18: px-to-rem(18);
+$fs-20: px-to-rem(20);
+$fs-24: px-to-rem(18);
+$fs-28: px-to-rem(22);
+$fs-32: px-to-rem(32);
+$fs-38: px-to-rem(38);
+
+// colors
+$white: #f1f1f1;
+$black: #111;
+$darkblue: #182848;
+$lightblue: #4b6cb7;
+$purple: #5a00ff;
+$blue: #0048ff;

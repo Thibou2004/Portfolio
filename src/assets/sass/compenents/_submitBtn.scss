@@ -1,0 +1,17 @@
+@use "../base/" as base;
+
+.submit {
+   width: 250px;
+   margin: 0 auto;
+   padding: 10px;
+   border-radius: 25px;
+   font-weight: 600;
+   font-size: clamp(base.$fs-18, 2.0vw, base.$fs-20);
+   background-color: base.$purple;
+   border: none;
+   color: base.$white;
+}
+
+.submit:hover {
+    opacity: 0.7;
+}

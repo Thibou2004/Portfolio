@@ -1,0 +1,7 @@
+@use "../base/" as base;
+
+.nav-item a {
+    color: base.$white;
+    text-decoration: none;
+    font-weight: 600;
+}
