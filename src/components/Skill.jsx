@@ -1,4 +1,4 @@
-import LogoSkill from "./logoSkill";
+import LogoSkill from "./LogoSkill";
 
 export default function Skill({logoClass, logoColor, title, array}) {
   return (
